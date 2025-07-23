@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#111827"/>
+  <circle cx="200" cy="200" r="150" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+  <text x="200" y="180" text-anchor="middle" fill="#f3f4f6" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Cursor Hat</text>
+  <text x="200" y="210" text-anchor="middle" fill="#d1d5db" font-family="Arial, sans-serif" font-size="14">Back View</text>
+  <text x="200" y="240" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="12">Replace with your photo</text>
+</svg> 

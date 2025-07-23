@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-07-02T23:32:52.495Z",
+  "webhook_url": "https://djbuildit.com/api/webhooks/printful",
+  "configuration": {
+    "exists": true,
+    "public_key": null,
+    "expires_at": "Never",
+    "total_events": 0
+  },
+  "endpoint": {
+    "reachable": true,
+    "status_code": 404,
+    "validates_signatures": false
+  },
+  "events": [],
+  "health_score": 50,
+  "recommendations": [
+    "Verify webhook signature validation is working",
+    "Configure more webhook events for better order tracking"
+  ]
+}
