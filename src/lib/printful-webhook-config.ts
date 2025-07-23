@@ -190,9 +190,6 @@ export async function setupPrintfulWebhooks(
   try {
     const result = await manager.setupWebhooks(webhookUrl);
     
-    console.log('✅ Printful webhooks configured successfully');
-    console.log('🔑 Public Key:', result.result.public_key);
-    console.log('🔐 Secret Key:', result.result.secret_key ? '***CONFIGURED***' : 'NOT_RETURNED');
     
     return {
       publicKey: result.result.public_key,

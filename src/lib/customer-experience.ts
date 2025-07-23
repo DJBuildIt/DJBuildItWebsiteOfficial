@@ -284,7 +284,6 @@ class OrderTracker {
 
       if (order.notifications.sms && order.shippingAddress.name) {
         // SMS confirmation would be sent here
-        console.log(`SMS confirmation for order ${order.orderId}`);
       }
     } catch (error) {
       monitoring.trackError('notification_failed', `Failed to send order confirmation for ${order.orderId}`, {
@@ -318,7 +317,6 @@ class OrderTracker {
 
       if (order.notifications.sms && status.status === 'shipped') {
         // SMS for shipping notification
-        console.log(`SMS shipping notification for order ${order.orderId}`);
       }
     } catch (error) {
       monitoring.trackError('notification_failed', `Failed to send status notification for ${order.orderId}`, {
@@ -376,7 +374,6 @@ class OrderTracker {
 
   // Email sending (placeholder - would integrate with email service)
   private async sendEmail(to: string, template: string, data: any): Promise<void> {
-    console.log(`Sending ${template} email to ${to}:`, data);
     // In production, this would integrate with your email service (SendGrid, etc.)
   }
 

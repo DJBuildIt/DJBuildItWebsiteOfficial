@@ -170,7 +170,6 @@ export const useEmailJS = () => {
         setIsSubmitting(false);
         
         // Log successful submission for analytics
-        console.log('Contact form submitted successfully', {
           service_type: formData.service_type,
           timestamp: new Date().toISOString(),
         });

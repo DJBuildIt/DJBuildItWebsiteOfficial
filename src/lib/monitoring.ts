@@ -245,7 +245,6 @@ class MonitoringSystem {
     // Placeholder for email alert integration
     try {
       // This would integrate with your email service (SendGrid, etc.)
-      console.log('Email alert would be sent:', alert);
     } catch (error) {
       console.error('Email alert failed:', error);    }
   }

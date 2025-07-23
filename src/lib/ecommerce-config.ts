@@ -348,7 +348,6 @@ export const getConfigurationStatus = () => {
 // Log configuration status in development
 if (isDevelopment) {
   const status = getConfigurationStatus();
-  console.log('🛍️ E-commerce Configuration Status:', status);
   
   if (status.overall.warnings.length > 0) {
     console.warn('⚠️ Configuration Warnings:', status.overall.warnings);

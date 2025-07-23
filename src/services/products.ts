@@ -58,10 +58,8 @@ export class ProductsService {
   static async getProducts(): Promise<Product[]> {
     const requestId = `client_products_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     
-    console.log(`🔵 [${new Date().toISOString()}] PRODUCTS_SERVICE_START:`, { requestId });
     
     try {
-      console.log(`🔵 [${new Date().toISOString()}] PRODUCTS_API_CALL:`, { 
         requestId,
         url: `${this.API_BASE}/products`
       });
@@ -74,7 +72,6 @@ export class ProductsService {
         }
       });
       
-      console.log(`✅ [${new Date().toISOString()}] PRODUCTS_API_RESPONSE:`, {
         requestId,
         success: response.data.success,
         productsCount: response.data.products?.length || 0,
@@ -89,7 +86,6 @@ export class ProductsService {
       // Transform Stripe products to our internal format
       const products = this.transformStripeProducts(response.data.products);
       
-      console.log(`✅ [${new Date().toISOString()}] PRODUCTS_SERVICE_COMPLETE:`, {
         requestId,
         productsCount: products.length,
         cached: false // Caching is now handled by TanStack Query
