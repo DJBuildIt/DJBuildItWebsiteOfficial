@@ -330,7 +330,6 @@ class RateLimiter {
     keysToDelete.forEach(key => this.records.delete(key));
     
     if (keysToDelete.length > 0) {
-      console.log(`Rate limiter cleanup: removed ${keysToDelete.length} expired records`);
     }
   }
 
